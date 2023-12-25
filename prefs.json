@@ -1,0 +1,15 @@
+{
+  "dbUrl": "jdbc:h2:./test",
+  "userName": "valerii",
+  "password": "",
+  "initDbSql": "./SQL/init_db.sql",
+  "populateDb": "./SQL/populate_db.sql",
+  "longestProject": "./SQL/find_longest_project.sql",
+  "maxProjectClient": "./SQL/find_max_projects_client.sql",
+  "maxSalaryWorker": "./SQL/find_max_salary_worker.sql",
+  "youngestEldestWorkers": "./SQL/find_youngest_eldest_workers.sql",
+  "maxProject": "./SQL/find_max_projects_client.sql",
+  "maxSalary": "./SQL/find_max_salary_worker.sql",
+  "youngestEldest": "./SQL/find_youngest_eldest_workers.sql",
+  "projectPrice": "./SQL/print_project_prices.sql"
+}
