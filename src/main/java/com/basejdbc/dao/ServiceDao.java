@@ -1,4 +1,4 @@
-package com.basejdbc.daoservice;
+package com.basejdbc.dao;
 
 import com.basejdbc.model.*;
 import com.basejdbc.prefs.Prefs;
