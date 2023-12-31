@@ -8,6 +8,6 @@ import java.time.LocalDate;
 public class Project {
     private Long id;
     private Long clientId;
-    private LocalDate startDate;
-    private LocalDate finishDate;
+    private String startDate;
+    private String finishDate;
 }

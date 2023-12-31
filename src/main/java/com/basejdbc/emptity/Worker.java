@@ -10,4 +10,12 @@ public class Worker {
     private String birthday;
     private Level level;
     private int salary;
+
+    public enum Level {
+        TRAINEE,
+        JUNIOR,
+        MIDDLE,
+        SENIOR
+    }
+
 }
