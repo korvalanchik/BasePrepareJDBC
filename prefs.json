@@ -12,5 +12,6 @@
   "maxSalary": "./SQL/find_max_salary_worker.sql",
   "youngestEldest": "./SQL/find_youngest_eldest_workers.sql",
   "projectPrice": "./SQL/print_project_prices.sql",
-  "clientsList": "./JSON/client.json"
+  "clientsList": "./JSON/client.json",
+  "workersList": "./JSON/worker.json"
 }

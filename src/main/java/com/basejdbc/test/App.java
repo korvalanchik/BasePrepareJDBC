@@ -1,10 +1,12 @@
 package com.basejdbc.test;
 
 import com.basejdbc.dao.ClientDao;
+import com.basejdbc.dao.WorkerDao;
 import com.basejdbc.emptity.Client;
+import com.basejdbc.emptity.Worker;
 import com.basejdbc.service.ClientService;
+import com.basejdbc.service.WorkerService;
 import com.basejdbc.storage.DatabaseInitService;
-import com.basejdbc.storage.DatabasePopulateService;
 import com.basejdbc.storage.Storage;
 import lombok.SneakyThrows;
 
@@ -17,9 +19,13 @@ public class App {
     public static void main(String[] args){
         Storage storage = Storage.getInstance();
         new DatabaseInitService().initDb(storage);
-//        new DatabasePopulateService().setDbPopulate(storage);
+        List<Worker> workers = new WorkerService().receiveWorker();
+        WorkerDao.save(workers);
         List<Client> clients = new ClientService().receiveClient();
         ClientDao.save(clients);
+        if(!storage.getConnection().isClosed()) {
+            storage.getConnection().close();
+        }
         storage.close();
     }
 }

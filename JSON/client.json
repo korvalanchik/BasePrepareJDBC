@@ -1,42 +1,32 @@
 [
   {
-    "id": 1,
     "name": "Sirozha"
   },
   {
-    "id": 2,
     "name": "Vasya"
   },
   {
-    "id": 3,
     "name": "Kolya S."
   },
   {
-    "id": 4,
     "name": "Sirozha"
   },
   {
-    "id": 5,
     "name": "Vasya P."
   },
   {
-    "id": 6,
     "name": "Dima"
   },
   {
-    "id": 7,
     "name": "Grisha"
   },
   {
-    "id": 8,
     "name": "Natasha"
   },
   {
-    "id": 9,
     "name": "Kiryusha"
   },
   {
-    "id": 10,
     "name": "Tanya"
   }
 ]

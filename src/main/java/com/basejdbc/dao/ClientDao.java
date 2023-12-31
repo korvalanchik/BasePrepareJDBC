@@ -13,9 +13,10 @@ public class ClientDao {
     private static final String INSERT_CLIENT_PREPARED_STATEMENT = "INSERT INTO client (`NAME`) VALUES (?)";
 
     public static void save(List<Client> client) {
-        try(Connection connection = Storage.getInstance().getConnection();
-            PreparedStatement preparedStatement = connection.prepareStatement(INSERT_CLIENT_PREPARED_STATEMENT))
+        try
         {
+            Connection connection = Storage.getInstance().getConnection();
+            PreparedStatement preparedStatement = connection.prepareStatement(INSERT_CLIENT_PREPARED_STATEMENT);
             connection.setAutoCommit(false);
             for(Client cl: client) {
                 populatePreparedStatement(cl, preparedStatement);
