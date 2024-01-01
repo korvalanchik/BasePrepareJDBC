@@ -2,16 +2,16 @@ package com.basejdbc.dao;
 
 import com.basejdbc.emptity.Project;
 import com.basejdbc.storage.Storage;
+import lombok.AccessLevel;
+import lombok.NoArgsConstructor;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.List;
 
+@NoArgsConstructor(access= AccessLevel.PRIVATE)
 public class ProjectDao {
-    private ProjectDao() {
-        throw new UnsupportedOperationException("This is a utility class and cannot be instantiated");
-    }
     private static final String INSERT_PROJECT_PREPARED_STATEMENT = "INSERT INTO project (CLIENT_ID, START_DATE, FINISH_DATE) VALUES(?,?,?)";
 
     public static void save(List<Project> project) {

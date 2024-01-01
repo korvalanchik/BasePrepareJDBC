@@ -18,8 +18,6 @@ import lombok.SneakyThrows;
 
 import java.util.List;
 
-
-@SuppressWarnings("java:S106")
 public class App {
     @SneakyThrows
     public static void main(String[] args){
