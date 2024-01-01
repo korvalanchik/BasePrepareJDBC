@@ -2,13 +2,11 @@ package com.basejdbc.dao;
 
 import com.basejdbc.emptity.Client;
 import com.basejdbc.storage.Storage;
-import lombok.NoArgsConstructor;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.List;
-@NoArgsConstructor
 public class ClientDao {
     private static final String INSERT_CLIENT_PREPARED_STATEMENT = "INSERT INTO client (`NAME`) VALUES (?)";
 

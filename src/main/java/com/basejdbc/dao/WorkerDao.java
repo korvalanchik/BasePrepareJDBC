@@ -4,7 +4,6 @@ import com.basejdbc.emptity.Worker;
 import com.basejdbc.storage.Storage;
 
 import java.sql.Connection;
-import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.List;

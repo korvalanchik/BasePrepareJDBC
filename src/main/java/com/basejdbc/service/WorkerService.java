@@ -1,6 +1,5 @@
 package com.basejdbc.service;
 
-import com.basejdbc.emptity.Client;
 import com.basejdbc.emptity.Worker;
 import com.basejdbc.prefs.Prefs;
 import com.fasterxml.jackson.core.type.TypeReference;
@@ -23,5 +22,4 @@ public class WorkerService {
 
         return objectMapper.readValue(workers, mapType);
     }
-
 }
