@@ -8,6 +8,10 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.List;
 public class ClientDao {
+    private ClientDao() {
+        throw new UnsupportedOperationException("This is a utility class and cannot be instantiated");
+    }
+
     private static final String INSERT_CLIENT_PREPARED_STATEMENT = "INSERT INTO client (`NAME`) VALUES (?)";
 
     public static void save(List<Client> client) {

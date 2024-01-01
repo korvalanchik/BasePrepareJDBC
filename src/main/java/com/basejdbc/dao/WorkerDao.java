@@ -9,6 +9,9 @@ import java.sql.SQLException;
 import java.util.List;
 
 public class WorkerDao {
+    private WorkerDao() {
+        throw new UnsupportedOperationException("This is a utility class and cannot be instantiated");
+    }
     private static final String INSERT_WORKER_PREPARED_STATEMENT = "INSERT INTO worker (`NAME`,`BIRTHDAY`,`LEVEL`,`SALARY`) VALUES(?,?,?,?)";
 
     public static void save(List<Worker> worker) {
